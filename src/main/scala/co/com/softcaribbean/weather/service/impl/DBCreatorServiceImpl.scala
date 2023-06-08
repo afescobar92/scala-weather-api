@@ -6,7 +6,7 @@ import co.com.softcaribbean.weather.service.DBCreatorService
 import scala.concurrent.{ExecutionContext, Future}
 
 class DBCreatorServiceImpl extends DBCreatorService[String,Int]{
-  import co.com.softcaribbean.weather.util.bd.DatabaseConfigProvider._
+  import co.com.softcaribbean.weather.persistence.bd.base.DatabaseConfigProvider._
 
   override def createModelDB()(implicit ec: ExecutionContext): Future[Int] = {
      DBCreatorRepositoryImpl.createModelDB().run(config)

@@ -3,8 +3,8 @@ package co.com.softcaribbean.weather.persistence.impl
 import cats.data.Reader
 import co.com.softcaribbean.weather.model.HistoryDTO
 import co.com.softcaribbean.weather.persistence.HistoryRepository
-import co.com.softcaribbean.weather.util.bd.DataBaseConf
-import co.com.softcaribbean.weather.util.bd.HistoryTable.HistoryDAO
+import co.com.softcaribbean.weather.persistence.bd.HistoryTable.HistoryDAO
+import co.com.softcaribbean.weather.persistence.bd.base.DataBaseConf
 
 import scala.concurrent.{ExecutionContext, Future}
 

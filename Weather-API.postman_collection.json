@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "51ade4c9-301e-42a0-a94f-55dc10583d08",
+		"_postman_id": "b306e5de-e981-4f18-8b24-f964162a6c5b",
 		"name": "Weather-API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "3416900"
@@ -60,7 +60,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9090/api/weather/history",
+					"raw": "http://localhost:9090/api/weather/history/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -69,7 +69,8 @@
 					"path": [
 						"api",
 						"weather",
-						"history"
+						"history",
+						""
 					]
 				}
 			},

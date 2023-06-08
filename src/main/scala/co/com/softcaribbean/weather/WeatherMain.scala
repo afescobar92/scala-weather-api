@@ -59,7 +59,9 @@ object WeatherMain extends App with ExceptionHandlerAdapter with ResponseFactory
       Http().newServerAt(host, port).bind(akkaRoute)
     def log: LoggingAdapter = Logging(system.eventStream, "api-weather")
     bindingFuture.map { serverBinding =>
-      log.info(s"ApiWeather run to ${serverBinding.localAddress} ")
+      val msg = s"ApiWeather run to ${serverBinding.localAddress} "
+      log.info(msg)
+      println(msg)
       DBCreatorServiceImpl.createModelDB()
     }
 

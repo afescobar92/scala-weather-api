@@ -1,19 +1,18 @@
   package co.com.softcaribbean.weather.persistence.impl
 
-  import akka.event.{Logging, LoggingAdapter}
   import cats.data.Reader
   import co.com.softcaribbean.weather.VersionDTO
   import co.com.softcaribbean.weather.persistence.VersionRepository
+  import co.com.softcaribbean.weather.persistence.bd.base.DataBaseConf
   import co.com.softcaribbean.weather.util.cache.CacheProvider
   import co.com.softcaribbean.weather.util.MarshallerCommon
-  import co.com.softcaribbean.weather.util.bd.DataBaseConf
   import play.api.libs.json.Json
 
   import scala.concurrent.{ExecutionContext, Future}
 
   sealed trait VersionRepositoryImpl extends VersionRepository[DataBaseConf,VersionDTO, Int]  with CacheProvider[String,VersionDTO] with MarshallerCommon {
 
-    import co.com.softcaribbean.weather.util.bd.VersionTable._
+    import co.com.softcaribbean.weather.persistence.bd.VersionTable._
 
     override def insertVersion(versionDto: VersionDTO)(implicit ec: ExecutionContext): Reader[DataBaseConf, Future[Int]] = Reader{
      dbConf: DataBaseConf =>

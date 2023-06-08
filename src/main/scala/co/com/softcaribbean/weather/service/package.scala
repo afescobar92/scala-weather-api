@@ -1,6 +1,6 @@
 package co.com.softcaribbean.weather.service
 
-import play.api.libs.json.{JsError, Json, OFormat}
+import play.api.libs.json.{JsError}
 import sttp.client3._
 import sttp.client3.asynchttpclient.future.AsyncHttpClientFutureBackend
 

@@ -2,7 +2,6 @@ package co.com.softcaribbean.weather.util.cache
 
 import com.github.blemale.scaffeine.{Cache, Scaffeine}
 import com.typesafe.config.{Config, ConfigFactory}
-import play.api.libs.json.Json
 
 import scala.concurrent.duration._
 

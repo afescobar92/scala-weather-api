@@ -11,7 +11,7 @@ import scala.concurrent.{ExecutionContext, Future}
 
 class VersionServiceImpl extends VersionService[VersionDTO,BaseDomain]{
 
-  import co.com.softcaribbean.weather.util.bd.DatabaseConfigProvider._
+  import co.com.softcaribbean.weather.persistence.bd.base.DatabaseConfigProvider._
 
   override def insertVersion(version: VersionDTO)(implicit ec: ExecutionContext): Future[BaseDomain] = {
 

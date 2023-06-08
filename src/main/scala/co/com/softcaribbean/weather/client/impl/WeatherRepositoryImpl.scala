@@ -1,9 +1,7 @@
 package co.com.softcaribbean.weather.client.impl
 
-import sttp.client3.{UriContext, _}
-import sttp.client3.playJson._
-import sttp.model._
 import sttp.client3._
+import sttp.client3.playJson._
 import cats.data.EitherT
 import cats.implicits._
 import co.com.softcaribbean.weather.service.{GenericError, WeatherError}

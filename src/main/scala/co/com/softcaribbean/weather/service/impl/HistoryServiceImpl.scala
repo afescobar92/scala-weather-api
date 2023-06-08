@@ -9,7 +9,7 @@ import scala.concurrent.{ExecutionContext, Future}
 
 class HistoryServiceImpl extends HistoryService[HistoryDTO,BaseDomain,HistoryResponse]{
 
-  import co.com.softcaribbean.weather.util.bd.DatabaseConfigProvider._
+  import co.com.softcaribbean.weather.persistence.bd.base.DatabaseConfigProvider._
 
   override def insertHistory(history: HistoryDTO)(implicit ec: ExecutionContext): Future[BaseDomain] = {
     HistoryRepositoryImpl.insertHistory(history).run(config).map { rows =>

@@ -2,7 +2,7 @@ package co.com.softcaribbean.weather.persistence.impl
 
 import cats.data.Reader
 import co.com.softcaribbean.weather.persistence.DBCreatorRepository
-import co.com.softcaribbean.weather.util.bd.DataBaseConf
+import co.com.softcaribbean.weather.persistence.bd.base.DataBaseConf
 
 import scala.concurrent.{ExecutionContext, Future}
 

@@ -1,5 +1,46 @@
+# bloop
+.bsp
+
+# sbt
+target/
+log/
+project/boot/
+project/plugins/project/
+.lib/
+dist/
+
+# sbt specific
+dist/*
+logs/
+lib_managed/
+src_managed/
+
+# IDE specific
+.idea/
+*.DS_Store
+.scala_dependencies
+.classpath
+*.iml
+.idea_modules/
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+/.env
+atlassian-ide-plugin.xml
+ 
+# Mac OSX specific
+.DS_Store
+ 
+#ActiveMQ specific
+*.data
+.history
+
+# other
+.cache
+LOG_PATH_IS_UNDEFINED/
+
+# general
 *.class
 *.log
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+.java-version

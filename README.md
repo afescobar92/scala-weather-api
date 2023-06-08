@@ -19,6 +19,7 @@ Esta es la estructura básica del todo el proyecto:
 ```
 api-weather
  L build.sbt
+ L Weather-API.postman_collection.json
  L src
     L main
        L resources
@@ -33,7 +34,7 @@ api-weather
            L persistence
            L service
            L util
-           L WeatherMain
+           L WeatherMain.scala
 ```
 ## Dependencias
 Weather Version 1.0.0 utiliza `Scala 2.13.10` dependencias tales como `Java 11` `Akka`, `Cats`, `Caffeine`, `H2`, `PlayJson`, `Sttp`, `Slick`
